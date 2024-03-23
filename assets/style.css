@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+:root {
+  /* Fonts */
+  --Font-family: "Bellota", sans-serif;
+  --Font-size : 20px;
+}
+
+*{
+  box-sizing: border-box;
+  font-family: var(--Font-family);
+  font-size: var(--Font-size) ;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: antiquewhite;
+}
+
+img{
+   width: 100%;
+}
+
+.section-gallery{
+  padding: 0 5%;
+  .name-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .images{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 100rem;
+    gap : 1rem;
+    flex-wrap: wrap; /*los elementos hijos se envuelven en múltiples líneas si no hay suficiente espacio en una sola línea. */
+
+
+
+    img{
+      flex-basis: 300px;/* Se establece el tamaño base de los elementos */
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+  }
+}
